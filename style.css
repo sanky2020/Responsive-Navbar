@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 20px;
+    position: relative;
+}
+#navbar span{
+    display: inline-block;
+   
+    border: 1px solid black;
+}
+#bar{
+    display: none;
+}
+@media (max-width:400px){
+    #bar{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border: 1px solid red;
+    }
+    .navbar span{
+        width: 100%;
+        border: 1px solid black;
+    }
+    .navbar.fadeaway{
+        display: none;
+    }
+}
